@@ -435,8 +435,13 @@ ul#nav {
     -moz-animation: es6 2s ease;
     -webkit-animation: es6 2s ease;
 }
+.vue {
+    width: 55%;
+    -moz-animation: vue 2s ease;
+    -webkit-animation: vue 2s ease;
+}
 .react {
-    width: 45%;
+    width: 40%;
     -moz-animation: react 2s ease;
     -webkit-animation: react 2s ease;
 }
@@ -543,7 +548,16 @@ ul#nav {
     }
 
     100% {
-        width: 45%;
+        width: 40%;
+    }
+}
+@-moz-keyframes vue {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
     }
 }
 @-moz-keyframes node {
@@ -653,6 +667,15 @@ ul#nav {
 
     100% {
         width: 45%;
+    }
+}
+@-webkit-keyframes vue {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 55%;
     }
 }
 @-webkit-keyframes node {
