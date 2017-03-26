@@ -391,7 +391,7 @@ ul#nav {
     -webkit-animation: css 2s ease;
 }
 .html5 {
-    width: 70%;
+    width: 85%;
     -moz-animation: html5 2s ease;
     -webkit-animation: html5 2s ease;
 }
@@ -406,12 +406,12 @@ ul#nav {
     -webkit-animation: mvc 2s ease;
 }
 .webapi {
-    width: 75%;
+    width: 90%;
     -moz-animation: webapi 2s ease;
     -webkit-animation: webapi 2s ease;
 }
 .csharp {
-    width: 75%;
+    width: 80%;
     -moz-animation: csharp 2s ease;
     -webkit-animation: csharp 2s ease;
 }
@@ -426,17 +426,17 @@ ul#nav {
     -webkit-animation: ef 2s ease;
 }
 .javascript {
-    width: 70%;
+    width: 80%;
     -moz-animation: javascript 2s ease;
     -webkit-animation: javascript 2s ease;
 }
 .es6 {
-    width: 55%;
+    width: 70%;
     -moz-animation: es6 2s ease;
     -webkit-animation: es6 2s ease;
 }
 .vue {
-    width: 55%;
+    width: 75%;
     -moz-animation: vue 2s ease;
     -webkit-animation: vue 2s ease;
 }
@@ -446,7 +446,7 @@ ul#nav {
     -webkit-animation: react 2s ease;
 }
 .node {
-    width: 45%;
+    width: 55%;
     -moz-animation: node 2s ease;
     -webkit-animation: node 2s ease;
 }
