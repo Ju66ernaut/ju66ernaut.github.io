@@ -401,22 +401,22 @@ ul#nav {
     -webkit-animation: jquery 2s ease;
 }
 .mvc {
-    width: 90%;
+    width: 85%;
     -moz-animation: mvc 2s ease;
     -webkit-animation: mvc 2s ease;
 }
 .webapi {
-    width: 90%;
+    width: 80%;
     -moz-animation: webapi 2s ease;
     -webkit-animation: webapi 2s ease;
 }
 .csharp {
-    width: 80%;
+    width: 75%;
     -moz-animation: csharp 2s ease;
     -webkit-animation: csharp 2s ease;
 }
 .sql {
-    width: 65%;
+    width: 55%;
     -moz-animation: sql 2s ease;
     -webkit-animation: sql 2s ease;
 }
@@ -426,7 +426,7 @@ ul#nav {
     -webkit-animation: ef 2s ease;
 }
 .javascript {
-    width: 80%;
+    width: 75%;
     -moz-animation: javascript 2s ease;
     -webkit-animation: javascript 2s ease;
 }
@@ -436,12 +436,12 @@ ul#nav {
     -webkit-animation: es6 2s ease;
 }
 .vue {
-    width: 75%;
+    width: 70%;
     -moz-animation: vue 2s ease;
     -webkit-animation: vue 2s ease;
 }
 .react {
-    width: 40%;
+    width: 65%;
     -moz-animation: react 2s ease;
     -webkit-animation: react 2s ease;
 }
@@ -485,7 +485,7 @@ ul#nav {
     }
 
     100% {
-        width: 90%;
+        width: 85%;
     }
 }
 @-moz-keyframes webapi {
@@ -494,7 +494,7 @@ ul#nav {
     }
 
     100% {
-        width: 75%;
+        width: 80%;
     }
 }
 @-moz-keyframes csharp {
@@ -512,7 +512,7 @@ ul#nav {
     }
 
     100% {
-        width: 65%;
+        width: 55%;
     }
 }
 @-moz-keyframes ef {
@@ -530,7 +530,7 @@ ul#nav {
     }
 
     100% {
-        width: 70%;
+        width: 75%;
     }
 }
 @-moz-keyframes es6 {
@@ -548,7 +548,7 @@ ul#nav {
     }
 
     100% {
-        width: 40%;
+        width: 65%;
     }
 }
 @-moz-keyframes vue {
@@ -557,7 +557,7 @@ ul#nav {
     }
 
     100% {
-        width: 55%;
+        width: 70%;
     }
 }
 @-moz-keyframes node {
@@ -603,7 +603,7 @@ ul#nav {
     }
 
     100% {
-        width: 90%;
+        width: 85%;
     }
 }
 @-webkit-keyframes webapi {
@@ -612,7 +612,7 @@ ul#nav {
     }
 
     100% {
-        width: 75%;
+        width: 80%;
     }
 }
 @-webkit-keyframes csharp {
@@ -630,7 +630,7 @@ ul#nav {
     }
 
     100% {
-        width: 65%;
+        width: 55%;
     }
 }
 @-webkit-keyframes ef {
@@ -648,7 +648,7 @@ ul#nav {
     }
 
     100% {
-        width: 70%;
+        width: 75%;
     }
 }
 @-webkit-keyframes es6 {
@@ -666,7 +666,7 @@ ul#nav {
     }
 
     100% {
-        width: 45%;
+        width: 65%;
     }
 }
 @-webkit-keyframes vue {
@@ -675,7 +675,7 @@ ul#nav {
     }
 
     100% {
-        width: 55%;
+        width: 70%;
     }
 }
 @-webkit-keyframes node {
