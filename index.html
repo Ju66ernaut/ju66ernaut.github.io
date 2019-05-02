@@ -252,13 +252,13 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         <div class="scanlines"></div>
     </div>
     <script>
-        let scanlines = $('.scanlines');
-        let tv = $('.tv');
+        let scanlines = $('.scanlines')
+        let tv = $('.tv')
         let comms = {
             exit: function() {
                 term.echo('exiting...')
                 setTimeout(() => {
-                    $('.tv').addClass('collapse');
+                    $('.tv').addClass('collapse')
                     term.disable();
                     setTimeout(() => {
                         window.close()
@@ -266,17 +266,17 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
                 }, 1000)
             },
             help: function() {
-                term.echo(`available commands`)
-                term.echo(`about            short bio about me`)
-                term.echo(`clear            clears the terminal`)
-                term.echo(`email-me         opens default email app`)
-                term.echo(`exit             shuts down the terminal`)
-                term.echo(`open-github      opens my github profile`)
-                term.echo(`open-linkedin    opens my linked in profile`)
-                term.echo(`open-so          opens my stack-overflow profile`)
-                term.echo(`resume           download a copy of my resume`)
-                term.echo(`tech             lists technologies I use on a regular basis`)
-                term.echo(`work             show work experience`)
+                term.echo(`Commands:`)
+                term.echo(` about            Short bio about me`)
+                term.echo(` clear            Clears the terminal`)
+                term.echo(` email-me         Opens default email app`)
+                term.echo(` exit             Shuts down the terminal`)
+                term.echo(` open-github      Opens my github profile`)
+                term.echo(` open-linkedin    Opens my linked in profile`)
+                term.echo(` open-so          Opens my stack-overflow profile`)
+                term.echo(` resume           View a copy of my resume`)
+                term.echo(` tech             Lists technologies I use on a regular basis`)
+                term.echo(` work             Show work experience`)
             },
             about: function() {
                 term.echo(`I am a software developer, science nerd, father, author of financialjs, and part-time beer snob`)
@@ -297,7 +297,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
                 window.open('https://stackoverflow.com/users/2530528/ju66ernaut?tab=profile', '_blank')
             },
             resume: function() {
-                term.echo('// TODO')
+                window.open('https://1drv.ms/b/s!AjHYGV3Hw1eKukBs635qXlOOcRI8', '_blank')
             },
             tech: function() {
                 term.echo('// TODO')
@@ -313,18 +313,18 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
             onResize: set_size,
             exit: false,
             onInit: function () {
-                set_size();
+                set_size()
             },
             prompt: '> '
         });
 
         function set_size() {
-            let height = $(window).height();
+            let height = $(window).height()
             let width = $(window).width()
             let time = (height * 2) / 170;
-            scanlines[0].style.setProperty("--time", time);
-            tv[0].style.setProperty("--width", width);
-            tv[0].style.setProperty("--height", height);
+            scanlines[0].style.setProperty("--time", time)
+            tv[0].style.setProperty("--width", width)
+            tv[0].style.setProperty("--height", height)
         }
         console.log('this site uses the very cool jquery terminal https://github.com/jcubic/jquery.terminal')
     </script>
