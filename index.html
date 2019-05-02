@@ -252,8 +252,8 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         <div class="scanlines"></div>
     </div>
     <script>
-        var scanlines = $('.scanlines');
-        var tv = $('.tv');
+        let scanlines = $('.scanlines');
+        let tv = $('.tv');
         let comms = {
             exit: function() {
                 term.echo('exiting...')
@@ -267,13 +267,47 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
             },
             help: function() {
                 term.echo(`available commands`)
-                term.echo(`about            gives short bio on me`)
-                term.echo(`open-github      opens my github page`)
+                term.echo(`about            short bio about me`)
+                term.echo(`clear            clears the terminal`)
+                term.echo(`email-me         opens default email app`)
+                term.echo(`exit             shuts down the terminal`)
+                term.echo(`open-github      opens my github profile`)
+                term.echo(`open-linkedin    opens my linked in profile`)
+                term.echo(`open-so          opens my stack-overflow profile`)
+                term.echo(`resume           download a copy of my resume`)
+                term.echo(`tech             lists technologies I use on a regular basis`)
+                term.echo(`work             show work experience`)
+            },
+            about: function() {
+                term.echo(`I am a software developer, science nerd, father, author of financialjs, and part-time beer snob`)
+                term.echo(`I am well versed in leading development of modern software solutions and maintaining existing and legacy systems`)
+                term.echo(`My professional career has been split between full-stack JavaScript development (mainly Vue.js, Node.js, Sequelize and MySQL) and the .NET stack (C#, MVC, Web API, MSSQL)`)
+                term.echo(`I also have experience utilizing Progressive Web App technologies`)
+            },
+            'email-me': function() {
+                window.location.href = 'mailto:ju66ernautdev@gmail.com?subject=Hey Chris!&body=zomg your page was so cool'
+            },
+            'open-github': function() {
+                window.open('https://github.com/Ju66ernaut', '_blank')
+            },
+            'open-linkedin': function() {
+                window.open('https://www.linkedin.com/in/christopher-diaz-b0864860/', '_blank')
+            },
+            'open-so': function() {
+                window.open('https://stackoverflow.com/users/2530528/ju66ernaut?tab=profile', '_blank')
+            },
+            resume: function() {
+                term.echo('// TODO')
+            },
+            tech: function() {
+                term.echo('// TODO')
+            },
+            work: function() {
+                term.echo('// TODO')
             }
-
         }
 
-        var term = $('#term').terminal(comms, {
+        let term = $('#term').terminal(comms, {
             name: 'terminal',
             greetings: `Type 'help' to see a list of commands`,
             onResize: set_size,
@@ -285,37 +319,14 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         });
 
         function set_size() {
-            var height = $(window).height();
-            var width = $(window).width()
-            var time = (height * 2) / 170;
+            let height = $(window).height();
+            let width = $(window).width()
+            let time = (height * 2) / 170;
             scanlines[0].style.setProperty("--time", time);
             tv[0].style.setProperty("--width", width);
             tv[0].style.setProperty("--height", height);
         }
-
-                // let funcInterpreter = (command, term) => {
-        //     if (command.match(/^\s*exit\s*$/)) {                
-        //         term.echo('exiting...')
-        //         setTimeout(() => {
-        //             $('.tv').addClass('collapse');
-        //             term.disable();
-        //             setTimeout(() => {
-        //                 window.close()
-        //             }, 1000)
-        //         }, 1000)
-        //     } else if (command !== '') {
-        //         try {
-        //             var result = window.eval(command);
-        //             if (result !== undefined) {
-        //                 term.echo(new String(result));
-        //             }
-        //         } catch (e) {
-        //             term.error(new String(e));
-        //         }
-        //     } else {
-        //         term.echo('');
-        //     }
-        // }
+        console.log('this site uses the very cool jquery terminal https://github.com/jcubic/jquery.terminal')
     </script>
 </body>
 
